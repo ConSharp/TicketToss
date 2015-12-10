@@ -1,0 +1,19 @@
+﻿@model List<TicketToss.Models.Event>
+
+<table>
+    <tr><th>Name</th><th>Teams</th><th>Ticket Owners</th></tr>
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.Name</td>
+            <td>@s.Teams</td>
+            <td>
+                @foreach (var m in s.Tickets)
+                {
+                    @m.User.Name <br/>
+                }
+            </td>
+
+        </tr>
+    }
+</table>

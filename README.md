@@ -1,2 +1,0 @@
-# TicketToss
-Ticket Trading Sit
